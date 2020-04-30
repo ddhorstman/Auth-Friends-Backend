@@ -60,14 +60,6 @@ function authenticator(req, res, next) {
   }
 }
 
-app.get('/', (req,res)=>{
-  res.status(200).send("Hello");
-});
-
-app.get('/favicon.ico', (req,res)=>{
-  res.status(200).send('./favicon.ico');
-})
-
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
   if (username === 'Lambda School' && password === 'i<3Lambd4') {
