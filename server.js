@@ -66,7 +66,7 @@ app.get("/", (req, res) => {
 
 app.post("/api/login", (req, res) => {
   const { username, password } = req.body;
-  if (username === "David" && password === "friendlist") {
+  if (username === "David" && password === "friendslist") {
     req.loggedIn = true;
     res.status(200).json({
       payload: token,
